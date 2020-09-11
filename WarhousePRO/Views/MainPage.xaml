@@ -20,7 +20,7 @@
                 <MenuFlyoutItem Text="New">
                     <i:Interaction.Behaviors>
                         <ic:EventTriggerBehavior EventName="Click">
-                            <ic:InvokeCommandAction Command="{x:Bind ViewModel.ButtonClickCommand}"/>
+                            <ic:InvokeCommandAction Command="{x:Bind ViewModel.ButtonClickCommand, Mode=OneWay}"/>
                         </ic:EventTriggerBehavior>
                     </i:Interaction.Behaviors>
                 </MenuFlyoutItem>
@@ -28,7 +28,7 @@
                 <MenuFlyoutItem Text="Save"/>
                 <MenuFlyoutItem Text="Exit"/>
             </muxc:MenuBarItem>
-            
+
             <muxc:MenuBarItem Title="Edit">
                 <MenuFlyoutItem Text="Undo"/>
                 <MenuFlyoutItem Text="Cut"/>
@@ -40,5 +40,6 @@
                 <MenuFlyoutItem Text="About"/>
             </muxc:MenuBarItem>
         </muxc:MenuBar>
+        <Button Content="Button" Click="Button_Click" Margin="55,60,0,0" Grid.Row="1" VerticalAlignment="Top" Height="87" Width="230"/>
     </Grid>
 </Page>

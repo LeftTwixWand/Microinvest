@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace WarhousePRO.ViewModels
 {
-    public class GeorgiaViewModel : MainViewModel
+    public class BulgariaViewModel : MainViewModel
     {
         internal override void Initialize()
         {
-            Debug.WriteLine("GeorgiaViewModel.Initialize");
+            Debug.WriteLine("BulgariaViewModel.Initialize");
         }
 
         internal override void ButtonClick()
         {
-            Debug.WriteLine("GeorgiaViewModel.ButtonClick");
+           Debug.WriteLine("BulgariaViewModel.ButtonClick");
         }
     }
 }

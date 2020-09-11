@@ -8,6 +8,6 @@ namespace WarhousePRO
 {
     internal static class Config
     {
-        public static Country Country = Country.Georgia;
+        public static Country Country = Country.Bulgatia;
     }
 }

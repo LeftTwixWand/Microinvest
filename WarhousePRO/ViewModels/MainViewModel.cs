@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Windows.Input;
 using WarhousePRO.Helpers;
 
@@ -18,19 +17,13 @@ namespace WarhousePRO.ViewModels
 
         public ICommand ButtonClickCommand => buttonClickCommand ?? (buttonClickCommand = new RelayCommand(ButtonClick));
 
-        public MainViewModel()
-        {
+        public MainViewModel() { }
 
-        }
-
-        internal virtual void Initialize()
-        {
-            Debug.WriteLine("MainViewModel");
-        }
+        internal virtual void Initialize() { }
 
         internal virtual void ButtonClick()
         {
-            MenuBarItem = "Main";
+            Debug.WriteLine("MainViewModel.ButtonClick");
         }
     }
 }
